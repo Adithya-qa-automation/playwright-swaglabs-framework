@@ -18,7 +18,7 @@ export default class LoginPage{
     }
 
     async navigateToLoginPage(){
-        await this.page.goto("process.env.BASE_URL!")
+        await this.page.goto(process.env.BASE_URL!)
     }
 
     async loginWithCredentials(username:string, password:string){
